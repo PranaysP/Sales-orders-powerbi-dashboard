@@ -1,0 +1,11 @@
+📐 DAX Measures Used
+
+Total Sales = SUMX(Orders, Orders[Quantity] * Orders[Price]) 
+Total Profit = [Total Sales] - [Total Cost] 
+Profit Margin % = DIVIDE([Total Profit], [Total Sales]) 
+YoY_Sales_Growth % = DIVIDE([Total_sales] - [Lastyear_sales], [Lastyear_sales]) 
+Lastyear_sales = CALCULATE([Total_sales],SAMEPERIODLASTYEAR(Sales[Order Date].[Date])) 
+Previous_month_sales = CALCULATE([Total_sales],PREVIOUSMONTH(Sales[Order Date].[Month])) 
+Running_Total = CALCULATE([Total_sales],FILTER(ALLSELECTED(Sales[Order Date]),Sales[Order Date] <= MAX(Sales[Order Date]))) 
+Top N sales = RANKX(ALL(Sales[Products]),[Total_sales],,DESC) Delivery_Days = DATEDIFF(Sales[Order Date],Sales[Shipped Date],DAY) 
+2ndMax_date = MAXX(FILTER(Sales,Sales[Order Date] < MAX(Sales[Order Date])), Sales[Order Date].[Date])
