@@ -31,6 +31,7 @@ Year-over-Year (YoY) Sales Growth %
 
 <img width="1187" height="106" alt="image" src="https://github.com/user-attachments/assets/d3e041e5-0e6a-4300-9e96-ec6fd427e8e7" />
 
+
 📈 Dashboard Features
 
 Sales trend analysis by Year & Month
@@ -41,6 +42,7 @@ Region-wise Sales distribution
 
 <img width="1096" height="283" alt="image" src="https://github.com/user-attachments/assets/ea0d779e-aff1-428c-80c2-ca62f8c61027" />
 
+
 Product-wise Profit contribution
 
 Country-wise Profit contribution
@@ -48,6 +50,7 @@ Country-wise Profit contribution
 Quantity vs Profit correlation analysis
 
 <img width="1111" height="278" alt="image" src="https://github.com/user-attachments/assets/87862174-8f1a-4696-bca9-a16697c62e9b" />
+
 
 Interactive filters (Country, Region, Product)
 
@@ -70,6 +73,7 @@ Delivery_Days = DATEDIFF(Sales[Order Date],Sales[Shipped Date],DAY)
 🖼 Dashboard Preview
 
 <img width="1278" height="687" alt="image" src="https://github.com/user-attachments/assets/2208a4fa-e0e1-4460-b178-f8c225007230" />
+
 
 💡 Business Insights
 
